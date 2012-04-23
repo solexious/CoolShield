@@ -4836,6 +4836,8 @@ We've spent an enormous amount of time creating and checking these footprints an
 <part name="U1" library="SparkFun-Boards" deviceset="ARDUINO_SHIELD" device="LONGPADS"/>
 <part name="GND11" library="supply1" deviceset="GND" device=""/>
 <part name="P+7" library="supply1" deviceset="+5V" device=""/>
+<part name="X3" library="con-wago-500" deviceset="W237-4" device=""/>
+<part name="GND3" library="supply1" deviceset="GND" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -4881,6 +4883,11 @@ We've spent an enormous amount of time creating and checking these footprints an
 <instance part="U1" gate="G$1" x="162.56" y="71.12" rot="MR0"/>
 <instance part="GND11" gate="1" x="180.34" y="53.34" rot="R90"/>
 <instance part="P+7" gate="1" x="180.34" y="66.04" rot="R270"/>
+<instance part="X3" gate="-1" x="137.16" y="60.96"/>
+<instance part="X3" gate="-2" x="137.16" y="55.88"/>
+<instance part="X3" gate="-3" x="137.16" y="50.8"/>
+<instance part="X3" gate="-4" x="137.16" y="45.72"/>
+<instance part="GND3" gate="1" x="147.32" y="55.88" rot="R90"/>
 </instances>
 <busses>
 </busses>
@@ -4976,6 +4983,11 @@ We've spent an enormous amount of time creating and checking these footprints an
 <wire x1="175.26" y1="53.34" x2="175.26" y2="55.88" width="0.1524" layer="91"/>
 <pinref part="U1" gate="G$1" pin="GND@2"/>
 <wire x1="175.26" y1="55.88" x2="175.26" y2="58.42" width="0.1524" layer="91"/>
+</segment>
+<segment>
+<pinref part="X3" gate="-2" pin="KL"/>
+<pinref part="GND3" gate="1" pin="GND"/>
+<wire x1="142.24" y1="55.88" x2="144.78" y2="55.88" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$1" class="0">
@@ -5086,6 +5098,13 @@ We've spent an enormous amount of time creating and checking these footprints an
 <wire x1="129.54" y1="27.94" x2="137.16" y2="27.94" width="0.1524" layer="91"/>
 <pinref part="U1" gate="G$1" pin="*D9"/>
 <wire x1="129.54" y1="63.5" x2="149.86" y2="63.5" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="N$13" class="0">
+<segment>
+<pinref part="X3" gate="-1" pin="KL"/>
+<pinref part="U1" gate="G$1" pin="*D10"/>
+<wire x1="142.24" y1="60.96" x2="149.86" y2="60.96" width="0.1524" layer="91"/>
 </segment>
 </net>
 </nets>
